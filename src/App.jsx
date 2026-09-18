@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import TodoForm from './components/TodoForm.jsx'
 import TodoList from './components/TodoList.jsx'
 import TodoFilters from './components/TodoFilters.jsx'
+import ThemeToggle from './components/ThemeToggle.jsx'
+import useTheme from './useTheme.js'
 
 const STORAGE_KEY = 'watcher-react.todos'
 
@@ -17,6 +19,7 @@ function loadTodos() {
 export default function App() {
   const [todos, setTodos] = useState(loadTodos)
   const [filter, setFilter] = useState('all')
+  const [theme, toggleTheme] = useTheme()
 
   useEffect(() => {
     try {
@@ -57,7 +60,10 @@ export default function App() {
 
   return (
     <main className="app">
-      <h1>Watcher Todo</h1>
+      <header className="header">
+        <h1>Watcher Todo</h1>
+        <ThemeToggle theme={theme} onToggle={toggleTheme} />
+      </header>
       <TodoForm onAdd={addTodo} />
       <TodoList
         todos={visibleTodos}

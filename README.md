@@ -6,6 +6,7 @@ A small React + Vite todo list app.
 
 - Add, complete, and delete todos
 - Filter by all / active / completed
+- Light / dark mode toggle that follows the system preference until you override it
 - Clear completed items
 - Todos persist in `localStorage`
 

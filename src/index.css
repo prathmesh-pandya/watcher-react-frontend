@@ -87,7 +87,13 @@ h1 {
   font-size: 1rem;
   font-weight: 500;
   color: var(--muted);
-  margin: -0.75rem 0 1.25rem;
+  margin: -0.75rem 0 0.35rem;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: -0.9rem 0 1.25rem;
 }
 
 .todo-form {

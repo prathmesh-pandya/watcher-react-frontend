@@ -65,6 +65,7 @@ export default function App() {
         <ThemeToggle theme={theme} onToggle={toggleTheme} />
       </header>
       <h2 className="subtitle">This is todo list</h2>
+      <p className="tagline">hello</p>
       <TodoForm onAdd={addTodo} />
       <TodoList
         todos={visibleTodos}

@@ -83,6 +83,13 @@ h1 {
   border-color: var(--accent);
 }
 
+.subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin: -0.75rem 0 1.25rem;
+}
+
 .todo-form {
   display: flex;
   gap: 0.5rem;

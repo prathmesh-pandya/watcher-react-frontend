@@ -64,6 +64,7 @@ export default function App() {
         <h1>Watcher Todo</h1>
         <ThemeToggle theme={theme} onToggle={toggleTheme} />
       </header>
+      <h2 className="subtitle">This is todo list</h2>
       <TodoForm onAdd={addTodo} />
       <TodoList
         todos={visibleTodos}

@@ -61,7 +61,7 @@ export default function App() {
   return (
     <main className="app">
       <header className="header">
-        <h1>Watcher Todo</h1>
+        <h1>Hello Prathmesh Pandya</h1>
         <ThemeToggle theme={theme} onToggle={toggleTheme} />
       </header>
       <h2 className="subtitle">This is todo list</h2>

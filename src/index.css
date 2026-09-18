@@ -1,7 +1,7 @@
 /* Light is the default. Dark applies when the system prefers it and the user
    has not chosen light, or when the user has explicitly chosen dark. */
 :root {
-  --bg: #ffe66d;
+  --bg: #ffffff;
   --surface: #ffffff;
   --text: #1c1c1e;
   --muted: #6b6b70;
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #2b2611;
+    --bg: #161618;
     --surface: #1f1f22;
     --text: #f2f2f3;
     --muted: #9a9aa0;
@@ -26,7 +26,7 @@
 }
 
 :root[data-theme="dark"] {
-  --bg: #2b2611;
+  --bg: #161618;
   --surface: #1f1f22;
   --text: #f2f2f3;
   --muted: #9a9aa0;
